@@ -222,12 +222,12 @@ header {
   align-items: center;
 }
 
-.about-section i.fa-html5 {
-  color: #e34c26;
+.about-section i.fa-node-js {
+  color: #3C873A;
 }
 
-.about-section i.fa-css3-alt {
-  color: #2965f1;
+.about-section i.fa-react {
+  color: #61DBFB;
 }
 
 .about-section i.fa-js {
