@@ -360,12 +360,6 @@ background-size: cover;
   background-size: cover;
 }
 
-.card__img.four {
-  width: 100%;
-  height: 250px;
-  background-image: url(https://live.staticflickr.com/65535/52175693050_8171527700_b.jpg);
-  background-size: cover;
-}
 
 .card__title {
   padding: 20px;
