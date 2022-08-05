@@ -1626,13 +1626,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white;
 }
 
 #contact .back-to-top:hover {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
-  color: white;
 }
 
 #contact .back-to-top span {
@@ -1685,6 +1683,11 @@ form button {
   cursor: pointer;
   border: none;
   padding: 0.2em 0;
+}
+
+.fa-arrow-alt-circle-up:before {
+    content: "\f35b";
+    color: white;
 }
 
 form button:active {
