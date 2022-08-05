@@ -1626,16 +1626,19 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: white;
 }
 
 #contact .back-to-top:hover {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
+  color: white;
 }
 
 #contact .back-to-top span {
   font-size: 0.8rem;
   margin-left: 10px;
+  color: white;
 }
 
 form {
