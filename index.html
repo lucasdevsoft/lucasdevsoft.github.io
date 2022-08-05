@@ -447,13 +447,13 @@
             <section id="contact" data-section="contact">
                 <div class="text">
                     <h2 class="project-title">You can quickly send me a message here</h2>
-                    <form method="POST" name="contact" data-netlify="true">
+                    <form action="https://formsubmit.co/a58e688a2ed3f2b47d3a01ee12e6d841" method="POST" name="contact" data-netlify="true">
                         <div class="form-field">
-                            <input type="text" name="name" required placeholder="" />
+                            <input type="text" name="name" required />
                             <label for="name">Name </label>
                         </div>
                         <div class="form-field">
-                            <input type="email" name="email" required placeholder="" />
+                            <input type="email" name="email" required />
                             <label for="email">Email </label>
                         </div>
                         <textarea
@@ -462,7 +462,9 @@
                             rows="6"
                             placeholder="And your message..."
                         ></textarea>
-                        <button>Send message</button>
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://lucasgarcia-dev.netlify.app/">
+                        <button id="submit" onClick="sendForm" type="submit">Send message</button>
                     </form>
                 </div>
                 <div class="back-to-top show">

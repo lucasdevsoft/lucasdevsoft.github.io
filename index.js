@@ -129,3 +129,8 @@ const typed = new Typed(".typed", {
 	cursorChar: '|', // Caracter para el cursor
 	contentType: 'html', // 'html' o 'null' para texto sin formato
 });
+
+
+function sendForm(e) {
+    e.preventDefault();
+}

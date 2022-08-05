@@ -116,10 +116,6 @@ $lengths: 121.52619934082031, 122.76060485839844, 83.15902709960938, 80.75180053
     justify-content: center;
 }
 
-#name-svg {
-    animation: fill 1s ease forwards 2s;
-    transform: translate(25%);
-}
 
 @media screen and (max-width: 800px) {
     .text-name {

@@ -4,8 +4,8 @@
   top: 0;
   width: 100%;
   opacity: 0;
-  -webkit-transition: opacity 1s ease;
-  transition: opacity 1s ease;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
 .confetti .colors {
@@ -29,6 +29,7 @@
   background-color: #f2de03;
   opacity: 0;
   z-index: -5;
+  border-radius: 100%;
 }
 
 .box-2,
@@ -38,9 +39,10 @@
 .uox-2,
 .vox-2,
 .zox-2 {
-  background-color: #fc6801;
+  background-color: #f5cb10;
   opacity: 0;
   z-index: -5;
+  border-radius: 100%;
 }
 
 .box-3,
@@ -50,9 +52,10 @@
 .uox-3,
 .vox-3,
 .zox-3 {
-  background-color: #ea2365;
+  background-color: #845EC2;
   opacity: 0;
   z-index: -5;
+
 }
 
 .box-4,
@@ -62,9 +65,10 @@
 .uox-4,
 .vox-4,
 .zox-4 {
-  background-color: #de022b;
+  background-color: #F9F871;
   opacity: 0;
   z-index: -5;
+  border-radius: 100%;
 }
 
 .box-5,
@@ -74,9 +78,10 @@
 .uox-5,
 .vox-5,
 .zox-5 {
-  background-color: #6b1eaa;
+  background-color: #FFC75F;
   opacity: 0;
   z-index: -5;
+
 }
 
 .box-6,
@@ -86,9 +91,10 @@
 .uox-6,
 .vox-6,
 .zox-6 {
-  background-color: #0069e8;
+  background-color: #FF9671;
   opacity: 0;
   z-index: -5;
+  border-radius: 100%;
 }
 
 .box-7,
@@ -98,9 +104,10 @@
 .uox-7,
 .vox-7,
 .zox-7 {
-  background-color: #02a4de;
+  background-color: #845EC2;
   opacity: 0;
   z-index: -5;
+  border-radius: 100%;
 }
 
 .box-8,
@@ -110,9 +117,10 @@
 .uox-8,
 .vox-8,
 .zox-8 {
-  background-color: #019d7e;
+  background-color: #D65DB1;
   opacity: 0;
   z-index: -5;
+  border-radius: 30%;
 }
 
 .box-9,
@@ -122,9 +130,10 @@
 .uox-9,
 .vox-9,
 .zox-9 {
-  background-color: #00707a;
+  background-color: #FF6F91;
   opacity: 0;
   z-index: -5;
+  border-radius: 10%;
 }
 
 .box-1 {
@@ -132,8 +141,8 @@
   left: 54vw;
   height: calc(1* 4px);
   width: calc(1* 5px);
-  -webkit-transform: rotate(68deg);
-          transform: rotate(68deg);
+  -webkit-transform: rotate(48deg);
+          transform: rotate(48deg);
   -webkit-animation: FALLCONFETTI 13s ease-in-out infinite;
           animation: FALLCONFETTI 13s ease-in-out infinite;
 }
@@ -143,8 +152,8 @@
   left: 94vw;
   height: calc(2* 4px);
   width: calc(2* 2px);
-  -webkit-transform: rotate(215deg);
-          transform: rotate(215deg);
+  -webkit-transform: rotate(235deg);
+          transform: rotate(235deg);
   -webkit-animation: FALLCONFETTI 13s ease-in-out infinite;
           animation: FALLCONFETTI 13s ease-in-out infinite;
 }
@@ -154,8 +163,8 @@
   left: 63vw;
   height: calc(3* 4px);
   width: calc(3* 4px);
-  -webkit-transform: rotate(119deg);
-          transform: rotate(119deg);
+  -webkit-transform: rotate(69deg);
+          transform: rotate(69deg);
   -webkit-animation: FALLCONFETTI 13s ease-in-out infinite;
           animation: FALLCONFETTI 13s ease-in-out infinite;
 }
@@ -209,8 +218,8 @@
   left: 27vw;
   height: calc(8* 4px);
   width: calc(8* 4px);
-  -webkit-transform: rotate(225deg);
-          transform: rotate(225deg);
+  -webkit-transform: rotate(21deg);
+          transform: rotate(21deg);
   -webkit-animation: FALLCONFETTI 13s ease-in-out infinite;
           animation: FALLCONFETTI 13s ease-in-out infinite;
 }
