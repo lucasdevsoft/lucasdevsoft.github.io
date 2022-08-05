@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165665685-2"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-165665685-2');
+        </script>
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="title" content="Lucas Garcia" />
+        <meta
+            name="description"
+            content="Personal portfolio showcasing various projects I've built with technologies such as Javascript, React, Express, MongoDB and Sass."
+        />
+        <script src="https://kit.fontawesome.com/eb2785bfc3.js" crossorigin="anonymous"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Lucas Garcia</title>
+    </head>
+    <body>
+        <div class="video-modal">
+            <video autoplay disablePictureInPicture loop muted>
+                <source src="" type="video/webm" />
+            </video>
+            <p></p>
+        </div>
+        <main>
+            <div id="wrapper">
+                <nav>
+                    <ul class="outer-menu">
+                        <li data-section="hero">
+                            <a href="#hero"> LG </a>
+                        </li>
+                        <li class="has-menu">
+                            <a href="#facebook" data-section="projects"
+                                ><i class="far fa-folder-open"></i>Projects</a
+                            >
+                            <ul class="inner-menu">
+                                <li>
+                                    <a href="#facebook">CineFlix</a>
+                                </li>
+                                <li>
+                                    <a href="#other-projects">Analyzer IP</a>
+                                </li>
+                                <li>
+                                    <a href="#other-projects">Rock Paper Scissor</a>
+                                </li>
+                                <li>
+                                    <a href="#other-projects">More...</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li data-section="about">
+                            <a href="#about"><i class="fas fa-user-alt"></i>About</a>
+                        </li>
+                        <li data-section="contact">
+                            <a href="#contact"><i class="far fa-paper-plane"></i>Contact</a>
+                        </li>
+                        <div class="selector"></div>
+                    </ul>
+                </nav>
+                <section id="hero" data-section="hero">
+                    <div>
+                        <h1 class="title-name">
+                            <span class="typed"></span>
+                        </h1>
+                        <h1 class="text-name">Lucas Garcia</h1>
+                        <p class="subtitle">Full-stack web developer<span></span></p>
+                    </div>
+                    <ul class="contact-links">
+                        <li>
+                            <a
+                                href="https://github.com/lucasdevsoft"
+                                target="_blank"
+                                title="GitHub"
+                                rel="noopener"
+                                ><i class="fab fa-github"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.linkedin.com/in/lucasgarciaweb/"
+                                target="_blank"
+                                title="LinkedIn"
+                                rel="noopener"
+                                ><i class="fab fa-linkedin-in"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="mailto: ehluke19@gmail.com" target="_blank" title="Email"
+                                ><i class="far fa-envelope"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="/documents/resume.pdf" target="_blank" title="Resume"
+                                ><i class="far fa-file-alt"></i
+                            ></a>
+                        </li>
+                    </ul>
+                    <div class="to-projects show">
+                        <i class="far fa-arrow-alt-circle-down"></i>
+                    </div>
+                </section>
+            </div>
+            
+            <section id="filmly" data-section="projects">
+                <article class="text">
+                    <h2>
+                        CineFlix
+                        <div>
+                            <a
+                                href="https://letterboxd-film.herokuapp.com/"
+                                target="_blank"
+                                rel="noopener"
+                                >Live <i class="far fa-window-maximize"></i
+                            ></a>
+                            <a
+                                href="https://github.com/julio22b/movie-app-backend"
+                                target="_blank"
+                                rel="noopener"
+                                >Code with Login <i class="fab fa-github"></i
+                            ></a>
+                            <a
+                                href="https://github.com/julio22b/movie-app-frontend"
+                                target="_blank"
+                                rel="noopener"
+                                >Code Basic <i class="fab fa-github"></i
+                            ></a>
+                        </div>
+                    </h2>
+                    <div>
+                        <p>
+                            A film reviewing app. It uses
+                            <a
+                                href=""
+                                rel="noopener"
+                                title="TMDB's website"
+                                target="_blank"
+                                class="highlight"
+                                >TMDB</a
+                            >
+                            APIs to get movie data for users to review, rate, like, and list.
+                            <br><br>
+                            This web application helped me understand <span class="highlight">React</span>, <span class="highlight">React Router</span>, its <span class="highlight">components</span>, the states within the application, and I
+                            also learned how to solve problems working on a project.
+                        </p>
+                    </div>
+                    <ul class="techs">
+                        <li><img src="./imgs/react.png" alt="React logo" /><span>React</span></li>
+                        <li>
+                            <img src="./imgs/nodejs-logo.svg" alt="Node logo" /><span>Node</span>
+                        </li>
+                        <li>
+                            <img src="./imgs/javascript.png" alt="JavaScript logo" height="70px" width="80px"/><span
+                                >JavaScript</span
+                            >
+                        </li>
+                        <li id="express"><img src="./imgs/Bootstrap_logo.svg" alt="Bootstrap logo" height="60px" width="80px" /><span>Bootstrap</span</li>
+                    </ul>
+                    <ul class="tech-list-words">
+                        <li>React</li>
+                        <li>Node</li>
+                        <li>JavaScript</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </article>
+                <article class="images">
+                    <figure>
+                        <video
+                            autoplay
+                            disablePictureInPicture
+                            loop
+                            muted
+                            data-desc="Shows the home page and the film's page where its data is displayed, including reviews by users."
+                        >
+                            <source src="./imgs/cineflix1.webm" type="video/webm" />
+                        </video>
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure>
+                        <video
+                            autoplay
+                            disablePictureInPicture
+                            loop
+                            muted
+                            data-desc="Searching for a film to review it, while adding a like, rating and the date it was watched."
+                        >
+                            <source src="./imgs/cineflix2.webm" />
+                        </video>
+                        <figcaption></figcaption>
+                    </figure>
+                </article>
+            </section>
+            <section id="other-projects" data-section="projects">
+                <h2 class="project-title">I've built a few other things...</h2>
+                <div>
+                    <article>
+                        <figure>
+                            <div>
+                                <div class="blanket">
+                                    <ul class="project-links">
+                                        <li>
+                                            <a
+                                                target="_blank"
+                                                href="https://rock-paperscissor.vercel.app/"
+                                                aria-label="Link to inventory app live page"
+                                                rel="noopener"
+                                                ><i class="far fa-window-maximize"></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                target="_blank"
+                                                href="https://github.com/lucasdevsoft/rockpaperscissors"
+                                                aria-label="Link to game rockpaper code on GitHub"
+                                                rel="noopener"
+                                                ><i class="fab fa-github"></i
+                                            ></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <img
+                                    src="./imgs/rockpaper.jpg"
+                                    alt="my game rock paper scissor"
+                                />
+                            </div>
+                            <figcaption>
+                                <span> Rock Paper Scissors </span>
+                                - <strong>Game</strong> app built with <strong>JavaScript</strong> and
+                                <strong>Html/Css</strong>.
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article>
+                        <figure>
+                            <div>
+                                <div class="blanket">
+                                    <ul class="project-links">
+                                        <li>
+                                            <a
+                                                target="_blank"
+                                                href="https://analizador-ips.netlify.app/"
+                                                aria-label="Link to Analizer IP page"
+                                                rel="noopener"
+                                                ><i class="far fa-window-maximize"></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                target="_blank"
+                                                href="https://github.com/lucasdevsoft/analizador-ip"
+                                                aria-label="Link to Blog's code on GitHub"
+                                                rel="noopener"
+                                                ><i class="fab fa-github"></i
+                                            ></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <img src="./imgs/analizadorip.jpg" alt="Homepage of my Analizer IP" />
+                            </div>
+                            <figcaption>
+                                <span>A Analyzer IP</span>
+                                - Made with <strong>JavaScript</strong>, with which you can get information about an ip.
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article>
+                        <figure>
+                            <div>
+                                <div class="blanket">
+                                    <ul class="project-links">
+                                        <li>
+                                            <a
+                                                target="_blank"
+                                                href="https://thegameof-life.vercel.app/"
+                                                aria-label="Link to game of life page"
+                                                rel="noopener"
+                                                ><i class="far fa-window-maximize"></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                target="_blank"
+                                                href="https://github.com/lucasdevsoft/game-of-life"
+                                                aria-label="Link to game of life code on GitHub"
+                                                rel="noopener"
+                                                ><i class="fab fa-github"></i
+                                            ></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <img src="./imgs/gameoflife.jpg" alt="game of life" />
+                            </div>
+                            <figcaption>
+                                <span>Game of Life</span>
+                                - Used <strong>JavaScript</strong> to replicate the Game of life by Conway.
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article>
+                        <figure>
+                            <div>
+                                <div class="blanket">
+                                    <ul class="project-links">
+                                        <li>
+                                            <a
+                                                target="_blank"
+                                                href="https://galleryofpics.vercel.app/"
+                                                aria-label="Link to gallery of pics page"
+                                                rel="noopener"
+                                                ><i class="far fa-window-maximize"></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                target="_blank"
+                                                href="https://github.com/lucasdevsoft/gallerypics"
+                                                aria-label="Link to gallery of pics code on GitHub"
+                                                rel="noopener"
+                                                ><i class="fab fa-github"></i
+                                            ></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <img src="./imgs/gallery.jpg" alt="gallery" />
+                            </div>
+                            <figcaption>
+                                <span>Photo gallery</span> - A page to view and download images.
+                                Uses <strong>Html and Css</strong>.
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article>
+                        <figure>
+                            <div>
+                                <div class="blanket">
+                                    <ul class="project-links">
+                                        <li>
+                                            <a
+                                                target="_blank"
+                                                href="https://reviewmacbook-m1.netlify.app/"
+                                                aria-label="Link to Landing page"
+                                                rel="noopener"
+                                                ><i class="far fa-window-maximize"></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                target="_blank"
+                                                href="https://github.com/lucasdevsoft/pageslanding"
+                                                aria-label="Link to Landing page review code on GitHub"
+                                                rel="noopener"
+                                                ><i class="fab fa-github"></i
+                                            ></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <img src="./imgs/reviewlanding.jpg" alt="" />
+                            </div>
+                            <figcaption>
+                                <span>Landing Page</span> - Made with the objective of learning
+                                <strong>Html and Css</strong>.
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article>
+                        <figure>
+                            <div>
+                                <div class="blanket">
+                                    <ul class="project-links">
+                                        <li>
+                                            <a
+                                                target="_blank"
+                                                href="https://cineflix-movies.vercel.app/"
+                                                aria-label="Link to Cineflix login page"
+                                                rel="noopener"
+                                                ><i class="far fa-window-maximize"></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                target="_blank"
+                                                href="https://github.com/lucasdevsoft/react-screening-alkemy-movies"
+                                                aria-label="Link to Cineflix code on GitHub"
+                                                rel="noopener"
+                                                ><i class="fab fa-github"></i
+                                            ></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <img src="./imgs/cineflix.jpg" alt="" />
+                            </div>
+                            <figcaption>
+                                <span>Cineflix with Login</span> - I recommend cloning the repository and testing it, the username and password is: challenge@alkemy.org, react.
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+            </section>
+            <section id="about" data-section="about">
+                <article class="text">
+                    <h2 class="project-title">Who I am</h2>
+                    <div>
+                        <p>
+                            Hi again. My name's Lucas Garcia. I live in Argentina. One day, I found about web
+                            development—about building web apps/sites by typing stuff into a
+                            computer and thought:
+                            <br /><br />
+                            <em>How awesome is that!?</em>
+                            <br />
+                            <br />
+                        </p>
+                        <p>
+                            I started learning on
+                            <a
+                                href="https://www.freecodecamp.org/"
+                                target="_blank"
+                                rel="noopener"
+                                title="freeCodeCamp website"
+                                >freeCodeCamp</a
+                            >
+                            and have been loving it since then. I've taught myself different tools
+                            to help me create better apps. But there are so many other things I want
+                            to learn about web development! I'm currently interested in NextJS and
+                            GraphQL, waiting for the day I get to try them out.
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <section id="contact" data-section="contact">
+                <div class="text">
+                    <h2 class="project-title">You can quickly send me a message here</h2>
+                    <form method="POST" name="contact" data-netlify="true">
+                        <div class="form-field">
+                            <input type="text" name="name" required placeholder="" />
+                            <label for="name">Name </label>
+                        </div>
+                        <div class="form-field">
+                            <input type="email" name="email" required placeholder="" />
+                            <label for="email">Email </label>
+                        </div>
+                        <textarea
+                            name="message"
+                            cols="30"
+                            rows="6"
+                            placeholder="And your message..."
+                        ></textarea>
+                        <button>Send message</button>
+                    </form>
+                </div>
+                <div class="back-to-top show">
+                    <i class="far fa-arrow-alt-circle-up"></i>
+                    <span>Back to top</span>
+                </div>
+            </section>
+        </main>
+        <div class="confetti show">
+            <div class="colors box-1"></div>
+            <div class="colors box-2"></div>
+            <div class="colors box-3"></div>
+            <div class="colors box-4"></div>
+            <div class="colors box-5"></div>
+            <div class="colors box-6"></div>
+            <div class="colors box-7"></div>
+            <div class="colors box-8"></div>
+            <div class="colors box-9"></div>
+            <div class="colors box-10"></div>
+            <div class="colors dox-1"></div>
+            <div class="colors dox-2"></div>
+            <div class="colors dox-3"></div>
+            <div class="colors dox-4"></div>
+            <div class="colors dox-5"></div>
+            <div class="colors dox-6"></div>
+            <div class="colors dox-7"></div>
+            <div class="colors dox-8"></div>
+            <div class="colors dox-9"></div>
+            <div class="colors dox-10"></div>
+            <div class="colors fox-1"></div>
+            <div class="colors fox-2"></div>
+            <div class="colors fox-3"></div>
+            <div class="colors fox-4"></div>
+            <div class="colors fox-5"></div>
+            <div class="colors fox-6"></div>
+            <div class="colors fox-7"></div>
+            <div class="colors fox-8"></div>
+            <div class="colors fox-9"></div>
+            <div class="colors fox-10"></div>
+            <div class="colors rox-1"></div>
+            <div class="colors rox-2"></div>
+            <div class="colors rox-3"></div>
+            <div class="colors rox-4"></div>
+            <div class="colors rox-5"></div>
+            <div class="colors rox-6"></div>
+            <div class="colors rox-7"></div>
+            <div class="colors rox-8"></div>
+            <div class="colors rox-9"></div>
+            <div class="colors rox-10"></div>
+            <div class="colors uox-1"></div>
+            <div class="colors uox-2"></div>
+            <div class="colors uox-3"></div>
+            <div class="colors uox-4"></div>
+            <div class="colors uox-5"></div>
+            <div class="colors uox-6"></div>
+            <div class="colors uox-7"></div>
+            <div class="colors uox-8"></div>
+            <div class="colors uox-9"></div>
+            <div class="colors uox-10"></div>
+            <div class="colors vox-1"></div>
+            <div class="colors vox-2"></div>
+            <div class="colors vox-3"></div>
+            <div class="colors vox-4"></div>
+            <div class="colors vox-5"></div>
+            <div class="colors vox-6"></div>
+            <div class="colors vox-7"></div>
+            <div class="colors vox-8"></div>
+            <div class="colors vox-9"></div>
+            <div class="colors vox-10"></div>
+            <div class="colors zox-1"></div>
+            <div class="colors zox-2"></div>
+            <div class="colors zox-3"></div>
+            <div class="colors zox-4"></div>
+            <div class="colors zox-5"></div>
+            <div class="colors zox-6"></div>
+            <div class="colors zox-7"></div>
+            <div class="colors zox-8"></div>
+            <div class="colors zox-9"></div>
+            <div class="colors zox-10"></div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="./index.js"></script>
+    </body>
+</html>
