@@ -28,8 +28,15 @@ const observer = new IntersectionObserver((entries, observer) => {
     });
 }, observerOpts);
 
+sections.forEach((section) => {
+    observer.observe(section);
+});
 
+const heroSection = document.querySelector('#hero');
+const goToProjects = document.querySelector('.to-projects');
+const heroObserverOpts = { threshold: 0.8 };
 
+heroObserver.observe(heroSection);
 
 const projectsSection = document.querySelector('#facebook');
 goToProjects.addEventListener('click', () => {
@@ -55,9 +62,19 @@ videoModal.addEventListener('click', (e) => {
     videoModal.classList.remove('open');
 });
 
+const contactSection = document.querySelector('#contact');
+const contactObserverOpts = {
+    threshold: 0.15,
+};
 
 
 
+contactObserver.observe(contactSection);
+
+const aboutSection = document.querySelector('#about');
+
+
+aboutObserver.observe(aboutSection);
 
 const toTop = document.querySelector('.back-to-top');
 toTop.addEventListener('click', () => {
