@@ -2236,7 +2236,7 @@ nav .selector {
 
 #hero .subtitle {
   font-size: 1.7rem;
-  width: 70%;
+  width: 80%;
   opacity: 0;
   -webkit-animation: fadeIn 600ms ease-in forwards;
           animation: fadeIn 600ms ease-in forwards;
