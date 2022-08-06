@@ -28,16 +28,8 @@ const observer = new IntersectionObserver((entries, observer) => {
     });
 }, observerOpts);
 
-sections.forEach((section) => {
-    observer.observe(section);
-});
 
-const heroSection = document.querySelector('#hero');
-const confetti = document.querySelector('.confetti');
-const goToProjects = document.querySelector('.to-projects');
-const heroObserverOpts = { threshold: 0.8 };
 
-heroObserver.observe(heroSection);
 
 const projectsSection = document.querySelector('#facebook');
 goToProjects.addEventListener('click', () => {
@@ -63,31 +55,9 @@ videoModal.addEventListener('click', (e) => {
     videoModal.classList.remove('open');
 });
 
-const contactSection = document.querySelector('#contact');
-const contactObserverOpts = {
-    threshold: 0.15,
-};
 
-const contactObserver = new IntersectionObserver(function (entries) {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            return confetti.classList.add('show');
-        }
-    });
-}, contactObserverOpts);
 
-contactObserver.observe(contactSection);
 
-const aboutSection = document.querySelector('#about');
-const aboutObserver = new IntersectionObserver(function (entries) {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            return confetti.classList.remove('show');
-        }
-    });
-}, contactObserverOpts);
-
-aboutObserver.observe(aboutSection);
 
 const toTop = document.querySelector('.back-to-top');
 toTop.addEventListener('click', () => {
