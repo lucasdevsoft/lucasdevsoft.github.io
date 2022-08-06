@@ -33,6 +33,7 @@ sections.forEach((section) => {
 });
 
 const heroSection = document.querySelector('#hero');
+const confetti = document.querySelector('.confetti');
 const goToProjects = document.querySelector('.to-projects');
 const heroObserverOpts = { threshold: 0.8 };
 
@@ -67,12 +68,24 @@ const contactObserverOpts = {
     threshold: 0.15,
 };
 
-
+const contactObserver = new IntersectionObserver(function (entries) {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            return confetti.classList.add('show');
+        }
+    });
+}, contactObserverOpts);
 
 contactObserver.observe(contactSection);
 
 const aboutSection = document.querySelector('#about');
-
+const aboutObserver = new IntersectionObserver(function (entries) {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            return confetti.classList.remove('show');
+        }
+    });
+}, contactObserverOpts);
 
 aboutObserver.observe(aboutSection);
 
