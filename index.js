@@ -79,7 +79,24 @@ const contactObserverOpts = {
 };
 
 
+const contactObserver = new IntersectionObserver(function (entries) {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            return
+        }
+    });
+}, contactObserverOpts);
+
 contactObserver.observe(contactSection);
+
+const aboutSection = document.querySelector('#about');
+const aboutObserver = new IntersectionObserver(function (entries) {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            return
+        }
+    });
+}, contactObserverOpts);
 
 const aboutSection = document.querySelector('#about');
 
