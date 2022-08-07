@@ -78,7 +78,6 @@ const contactObserverOpts = {
     threshold: 0.15,
 };
 
-
 const contactObserver = new IntersectionObserver(function (entries) {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -97,9 +96,6 @@ const aboutObserver = new IntersectionObserver(function (entries) {
         }
     });
 }, contactObserverOpts);
-
-const aboutSection = document.querySelector('#about');
-
 
 aboutObserver.observe(aboutSection);
 
