@@ -82,7 +82,7 @@ const contactObserverOpts = {
 const contactObserver = new IntersectionObserver(function (entries) {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            return
+            return confetti.classList.add('show');
         }
     });
 }, contactObserverOpts);
