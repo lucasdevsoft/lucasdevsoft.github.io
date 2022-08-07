@@ -37,6 +37,16 @@ const confetti = document.querySelector('.confetti');
 const goToProjects = document.querySelector('.to-projects');
 const heroObserverOpts = { threshold: 0.8 };
 
+const heroObserver = new IntersectionObserver(function (entries, heroObserver) {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            goToProjects.classList.add('show');
+        } else {
+            goToProjects.classList.remove('show');
+        }
+    });
+}, heroObserverOpts);
+
 heroObserver.observe(heroSection);
 
 const projectsSection = document.querySelector('#facebook');
