@@ -1724,7 +1724,7 @@ nav .selector {
 #stars {
   width: 1px;
   height 1px;
-  z-index: -1000;
+  z-index: -997;
   background: transparent;
   animation: animStar 50s linear infinite;
   box-shadow: 779px 1331px #fff, 324px 42px #fff, 303px 586px #fff,
@@ -1912,7 +1912,7 @@ nav .selector {
   top: 2000px;
   width: 1px;
   height: 1px;
-  z-index: -1000;
+  z-index: -997;
   background: transparent;
   box-shadow: 779px 1331px #fff, 324px 42px #fff, 303px 586px #fff,
     1312px 276px #fff, 451px 625px #fff, 521px 1931px #fff, 1087px 1871px #fff,
@@ -2096,7 +2096,7 @@ nav .selector {
 #stars2 {
   width: 2px;
   height 2px;
-  z-index: -1100;
+  z-index: -998;
   background: transparent;
   animation: animStar 100s linear infinite;
   box-shadow: 1448px 320px #fff, 1775px 1663px #fff, 332px 1364px #fff,
@@ -2158,7 +2158,7 @@ nav .selector {
   top: 2000px;
   width: 2px;
   height: 2px;
-  z-index: -1100;
+  z-index: -998;
   background: transparent;
   box-shadow: 1448px 320px #fff, 1775px 1663px #fff, 332px 1364px #fff,
     878px 340px #fff, 569px 1832px #fff, 1422px 1684px #fff, 1946px 1907px #fff,
@@ -2216,7 +2216,7 @@ nav .selector {
   #stars3 {
     width: 3px;
     height: 3px;
-    z-index: -1200;
+    z-index: -999;
     background: transparent;
     animation: animStar 150s linear infinite;
     box-shadow: 387px 1878px #fff, 760px 1564px #fff, 1487px 999px #fff,
@@ -2253,7 +2253,7 @@ nav .selector {
     top: 2000px;
     width: 3px;
     height: 3px;
-    z-index: -1200;
+    z-index: -999;
     background: transparent;
     box-shadow: 387px 1878px #fff, 760px 1564px #fff, 1487px 999px #fff,
     948px 1828px #fff, 1977px 1001px #fff, 1284px 1963px #fff, 656px 284px #fff,
@@ -2284,10 +2284,10 @@ nav .selector {
   }
 @keyframes animStar {
   from {
-    transform: translateY(0px);
+    transform: translateY(-2000px);
   }
   to {
-    transform: translateY(-2000px);
+    transform: translateY(0px);
   }
 }
 
