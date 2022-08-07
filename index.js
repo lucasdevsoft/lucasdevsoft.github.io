@@ -93,7 +93,7 @@ const aboutSection = document.querySelector('#about');
 const aboutObserver = new IntersectionObserver(function (entries) {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            return
+            return confetti.classList.remove('show');
         }
     });
 }, contactObserverOpts);
